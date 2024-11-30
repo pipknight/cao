@@ -7,11 +7,43 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+.navbar {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #032ea1;
+}
+
+.nav-logo {
+  img {
+    height: 8vh;
+    margin: 0 2rem;
+    border-radius: 50%;
+  }
+}
+
+.nav-items {
+  width: 50%;
+  ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0rem 3rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  background-color: #255799;
+  min-height: 80vh;
+  background-color: #e00025;
 }
 
 .hero-left {
@@ -21,6 +53,7 @@
   align-items: center;
   text-align: center;
   color: #fff;
+  margin: 2.5rem;
   h1 {
     font-size: 5rem;
     margin-bottom: 0.5rem;
@@ -31,14 +64,16 @@
     max-width: 45ch;
   }
   button {
+    font-size: 1.5rem;
     border: none;
-    color: #002244;
-    background-color: #fecc07;
-    border-radius: 1rem;
+    color: #000;
+    background-color: #fff;
+    border-radius: 2rem;
     padding: 1rem 2rem;
     cursor: pointer;
     &:hover {
-      background-color: #f0ab00;
+      background-color: #000;
+      color: #fff;
     }
   }
 }
@@ -58,4 +93,12 @@
   .hero {
     grid-template-columns: 1fr;
   }
+  .hero-right img {
+    width: 50%;
+  }
+}
+
+.white {
+  background-color: #032ea1;
+  min-height: 10vh;
 }
