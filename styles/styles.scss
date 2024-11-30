@@ -21,7 +21,6 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 4rem;
   h1 {
     font-size: 5rem;
     margin-bottom: 0.5rem;
@@ -29,7 +28,7 @@
   p {
     font-size: 1.5rem;
     margin-bottom: 3rem;
-    max-width: 35ch;
+    max-width: 45ch;
   }
   button {
     border: none;
@@ -37,6 +36,7 @@
     background-color: #fecc07;
     border-radius: 1rem;
     padding: 1rem 2rem;
+    cursor: pointer;
     &:hover {
       background-color: #f0ab00;
     }
@@ -45,11 +45,12 @@
 
 .hero-right {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   img {
-    width: 70%;
+    width: 65%;
     border-radius: 5rem;
+    border: 0.5rem solid #fff;
   }
 }
 
